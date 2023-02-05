@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto',sans-serif;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+.app{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(247, 132, 132);
+    /* margin: auto; */
+}
+
+.container{
+    width: 100%;
+    max-width: 1500px;
+    background-color: #202020;
+    /* height: 50px; */
+    margin:auto;
+    position: sticky;
+    top: 0;
+    height: 85px;
+    z-index: 100;
+}
+
+.navbar{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px 10px;
+}
+
+.search{
+    /* background-color: antiquewhite; */
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.search > input{
+    width: 60%;
+    height: 100%;
+    border: none;
+    border-bottom-left-radius: 8px;
+    padding: 0px 10px;
+    font-size: 1.15rem;
+}
+
+.search > button{
+    height: 100%;
+    border-radius: 0;
+    border: none;
+    border-top-right-radius: 8px;
+    padding: 0px 20px;
+    font-weight: 500;
+    font-size: 1.15rem;
+    background-color: #CFCF02;
+}
+
+.search > button:hover{
+    opacity: 0.8;
+}
+
+.search > button:active{
+    transform: scale(1.05);
+}
+
+
+.cart-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 20px;
+    gap: 20px;
+}
+
+.cart-login > i{
+    font-size : 2rem;
+    color: #CFCF02;
+    cursor: pointer;
+}
+
+.login-btn{
+    height: 100%;
+    padding: 0px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #CFCF02;
+    font-weight: 600;
+    font-size: 1.15rem;
+    cursor: pointer;
+}
+
+.login-btn:hover, .cart-login>i:hover {
+    opacity: 0.8;
+}
+
+.login-btn:active ,.cart-login>i:active{
+    transform: scale(.95);
+}
+
+
+.logo{
+    background-image: linear-gradient(60deg, #FFB03A, #E21143);
+    background-clip: text; 
+    color: transparent; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.logo > p{
+    
+    font-size : 2.5rem;
+    margin: 0px;
+    /* background-color: purple; */
+    font-family: 'Dancing Script',cursive;
+    font-weight: 800;
+    /* color: #CFCF02;; */
+}
+
+/* navigation */
+
+.navigation{
+    width: 100%;
+    background-color:white;
+}
+
+.links{
+    /* background-color: red; */
+    /* margin: auto; */
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.links li{
+    font-size: 1.15rem;
+    cursor: pointer;
+    padding: 20px 0px;
+}
+
+.dropdown {
+    overflow: hidden;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/* hero  */
+
+.hero_container{
+    background-color:paleturquoise;
+    width: 100%;
+    max-width: 1500px;
+    /* height: 50px; */
+    margin: auto;
+    height: calc(100vh - 85px);
+    /* height: 100vh; */
+    /* overflow: hidden; */
+    position: relative;
+}
+
+.hero{
+    width: 100%;
+    height: 100%;
+    background-image: url("images/hero2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    /* position: absolute; */
+}
+
+#overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0,0,0, 0.8);
+}
+
+
+.hero_text{
+    position: absolute;
+    top: 25%;
+    left: 28%;
+    color: white;
+    text-align: center;
+}
+
+.hero_text > h1{
+    font-size: 9rem;
+    font-family: 'Dancing Script',cursive;
+    font-weight: bold;
+}
+.hero_text > p{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+
